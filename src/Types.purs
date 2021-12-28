@@ -14,8 +14,13 @@ derive newtype instance Semiring NonNegativeInt
 
 ----- MAIN
 
-type MainState = {}
-data MainAction
+data KeyboardState = Initial | Showing | Hidden
+
+type MainState =
+  { showingKeyboard :: KeyboardState
+  }
+
+data MainAction = ShowKeyboard | HideKeyboard
 
 ------ CYCLE
 type CycleState = {}

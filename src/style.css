@@ -9,92 +9,20 @@
 /* -------- */
 /* -------- */
 /* -------- */
-@keyframes fadeIn {
+@keyframes showKeyboard {
 	from {
-		opacity: 0;
+		max-height: 0px;
 	}
 	to {
-		opacity: 1;
+		max-height: 200px;
 	}
 }
 
-@keyframes fadeOut {
+@keyframes hideKeyboard {
 	from {
-		opacity: 1;
+		max-height: 200px;
 	}
 	to {
-		opacity: 0;
-	}
-}
-
-@keyframes flyUp {
-	from {
-		top: 0px;
-	}
-	to {
-		top: -100%;
-	}
-}
-
-@keyframes flyDown {
-	from {
-		top: -100%;
-	}
-	to {
-		top: 0px;
-	}
-}
-
-@keyframes flyIn {
-	from {
-		left: 200%;
-	}
-	to {
-		left: 0px;
-	}
-}
-
-@keyframes creepLeft0 {
-	from {
-		width: 0%;
-	}
-	to {
-		width: 100%;
-	}
-}
-
-@keyframes creepLeft1 {
-	from {
-		width: 0%;
-	}
-	to {
-		width: 100%;
-	}
-}
-
-@keyframes flyOut {
-	from {
-		left: 0px;
-	}
-	to {
-		left: -150%;
-	}
-}
-
-@keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform:rotate(360deg);
-    }
-}
-
-@keyframes hideLoading {
-	from {
-		top: 0px;
-		visibility: visible;
-	}
-	to {
-		top: -100%;
-		visibility: hidden;
+		max-height: 0px;
 	}
 }

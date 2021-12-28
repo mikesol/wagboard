@@ -1,10 +1,6 @@
 import "./style.css";
 import main from "../output/Main";
-import "../output/Components.Editor";
-import "../output/Components.Player";
-import "../node_modules/ace-builds/src-noconflict/ace.js";
-import "../node_modules/ace-builds/src-noconflict/mode-haskell";
-import "../node_modules/ace-builds/src-noconflict/theme-cobalt";
+import "../output/Components.Cycle";
 main.main();
 
 if (module.hot) {
@@ -12,11 +8,7 @@ if (module.hot) {
 		document.body.innerHTML = "";
 		main.main();
 	});
-	module.hot.accept("../output/Components.Player", function () {
-		document.body.innerHTML = "";
-		main.main();
-	});
-	module.hot.accept("../output/Components.Editor", function () {
+	module.hot.accept("../output/Components.Cycle", function () {
 		document.body.innerHTML = "";
 		main.main();
 	});
